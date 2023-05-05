@@ -9,3 +9,7 @@ input{
 input:focus{
     outline: none;
 }
+.num{
+    background-color: white;
+
+}
