@@ -1,0 +1,11 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+input{
+    border: none;
+    text-align: right;
+}
+input:focus{
+    outline: none;
+}
