@@ -1,8 +1,10 @@
 table{
     border-collapse: collapse;
     text-align: center;
+    color: white;
 }
 input{
+    
     border: none;
     text-align: right;
 }
@@ -10,6 +12,15 @@ input:focus{
     outline: none;
 }
 .num{
-    background-color: white;
-
+    background-color: rgb(43, 43, 43);
+    border-color: black;
+    
+}
+.op {
+    background-color: rgb(61, 61, 61);
+    border-color: black;
+}
+.cal {
+    background-color: rgb(255, 90, 167);
+    color: black;
 }

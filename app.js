@@ -1,4 +1,5 @@
 let Numcheck = false //처음에는 아무것도 적혀있지 않은 상태이므로 false
+//숫자를 눌렀을 경우
 function Output(char) {
     if(Numcheck == false) {   
         if(isNaN(char) == true) { 
@@ -12,7 +13,7 @@ function Output(char) {
     else{
         document.getElementById('line1').value += char   //숫자를 입력받았으면 line1에 표시
     }
-
+    //입력된 문자가 숫자인지 아닌지 판별
     if(isNaN(char) == true) {
         Numcheck = false; //숫자가 아닌게 참이라면 ture
     }
@@ -21,15 +22,18 @@ function Output(char) {
     }
     
 }
+//= 버튼을 눌렀을 경우
 function cal() {
     const line1 = document.getElementById("line1");
     let line2 = eval(line1.value); //블록변수line2에 line1의 값을 eval함수로 계산하여 값넣기
-    document.getElementById('line2').value = line2;  //line2에 블록변수line2 표시
+    document.getElementById('line2').value = line2;
 }
+//AC 버튼을 눌렀을 경우
 function reset() {
     document.getElementById("line1").value = "";  //line1 전부 초기화
     document.getElementById('line2').value = "";  //line2 전부 초기화
 }
+//C 버튼을 눌렀을 경우
 function del() {
     let line1 = document.getElementById("line1");
     line1.value = line1.value.substring(0, line1.value.length - 1);  //line1에 0번째 값을 길이에 1만큼 삭제
